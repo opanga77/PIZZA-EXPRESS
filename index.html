@@ -6,11 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PIZZA-EXPRESS</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="/js/scripts.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
 </head>
 <body>
     <div class="header">
         <div class="inner-header">
-            <div class="logo-container">
+            <div class="logo-container" id="target">
                 <h1>PizZa<span>ExpResS</span></h1>
             </div>
             <div class="pill-nav">
@@ -23,10 +30,107 @@
     <div id="home">
         <div class="picture">
             <div class="title">
-                    <h1>Be your own Boss</h1>
-                <p>A site that helps you become the boss.</p>
+                    <h1>Pizza Express</h1>
+                <p>ewiteoury.</p>
             </div>
         </div>
         </div>
+        <br><br><br><br>
+        <!-- dshytfysdytafufatsdfas -->
+        <div class = "container">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="well" id="leftCol">
+                    <h2>Toppings</h2>
+                    <!-- <p>trukurdjygyh<br>brdskdxjhdshjdfgj<br>sdhgfkjefsdjsdfhds<br>jffdfkhdsjfsdjhgfsdj<br>xfjhcdgvfvjdrhjhj<br>dskjlksoeuiryeoe</p> -->
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="well">
+                    <h1>kufstwqfahtrsdfasydftas</h1>
+                  <div class = "form-group">
+                    <form id= "pizzaOrder">
+                      <label for="size">Choose Your Size of Pizza:</label>
+                      <select class="form-control" id="size">
+                        <option value= 800>Small: ksh.800</option>
+                        <option value= 1100>Medium: ksh.1,100</option>
+                        <option value= 1300>Large: ksh.1,300</option>
+                        <!-- <option value= 1400>Extra-Large: ksh.1,400</option> -->
+                      </select>
+                      <label for="toppings1">Choose Your First Topping:</label>
+                      <select class="form-control" id="toppings1">
+                        <option value= 0>Plain (Just Cheese and sauce)</option>
+                        <option value= 200>Pepperoni (ksh.200)</option>
+                        <option value= 200>Sausage (ksh.200)</option>
+                        <option value= 250>Capicola (ksh.250)</option>
+                        <option value= 250>Anchovies (ksh.250)</option>
+                        <option value= 150>Mushrooms (ksh.150)</option>
+                        <option value= 150>Onions (ksh.150)</option>
+                        <option value= 150>Green Peppers (ksh.150)</option>
+                        <option value= 150>Arugula (ksh.150)</option>
+                        <option value= 150>Green Olives (ksh.150)</option>
+                      </select>
+                      <label for="toppings2">Second Topping:</label>
+                      <select class="form-control" id="toppings2">
+                        <option value= 0>none</option>
+                        <option value= 200>Pepperoni (ksh.200)</option>
+                        <option value= 200>Sausage (ksh.200)</option>
+                        <option value= 250>Capicola (ksh.250)</option>
+                        <option value= 250>Anchovies (ksh.250)</option>
+                        <option value= 150>Mushrooms (ksh.150)</option>
+                        <option value= 150>Onions (ksh.150)</option>
+                        <option value= 150>Green Peppers (ksh.150)</option>
+                        <option value= 150>Arugula (ksh.150)</option>
+                        <option value= 150>Green Olives (ksh.150)</option>
+                      </select>
+                      <label for="toppings3">Third Topping:</label>
+                      <select class="form-control" id="toppings3">
+                        <option value= 0>none</option>
+                        <option value= 0>Plain (Just Cheese and sauce)</option>
+                        <option value= 200>Pepperoni (ksh.200)</option>
+                        <option value= 200>Sausage (ksh.200)</option>
+                        <option value= 250>Capicola (ksh.250)</option>
+                        <option value= 250>Anchovies (ksh.250)</option>
+                        <option value= 150>Mushrooms (ksh.150)</option>
+                        <option value= 150>Onions (ksh.150)</option>
+                        <option value= 150>Green Peppers (ksh.150)</option>
+                        <option value= 150>Arugula (ksh.150)</option>
+                        <option value= 150>Green Olives (ksh.150)</option>
+                      </select>
+                      <label for="toppings4">Fourth Topping:</label>
+                      <select class="form-control" id="toppings4">
+                        <option value= 0>none</option>
+                        <option value= 200>Pepperoni (ksh200)</option>
+                        <option value= 200>Sausage (ksh200)</option>
+                        <option value= 250>Capicola (ksh250)</option>
+                        <option value= 250>Anchovies (ksh250)</option>
+                        <option value= 150>Mushrooms (ksh150)</option>
+                        <option value= 150>Onions (ksh150)</option>
+                        <option value= 150>Green Peppers (ksh.150)</option>
+                        <option value= 150>Arugula (ksh.150)</option>
+                        <option value= 150>Green Olives (ksh.150)</option>
+                      </select>
+                      <button type="submit" class="btn btn-success" id="orderButton">Get Price</button>
+                      <button type="button" class="btn btn-danger" value="Refresh Page" onClick="window.location.reload()" id="cancelButton">Cancel</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="well" id="rightCol">
+                    <!-- <p>trukurdjygyh<br>brdskdxjhdshjdfgj<br>sdhgfkjefsdjsdfhds<br>jffdfkhdsjfsdjhgfsdj<br>xfjhcdgvfvjdrhjhj<br>dskjlksoeuiryeoe</p> -->
+                </div>
+              </div>
+            </div>
+            <div id="customerOrder">
+              <div class="well" id="displayWell">
+                <h1 class="orderTitle">Your Pizza Total:</h1>
+                  <ul>
+      
+                  </ul>
+              </div>
+            </div>
+          </div>
+        <script src="/js/scripts.js"></script>
 </body>
 </html>

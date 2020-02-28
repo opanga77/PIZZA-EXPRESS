@@ -43,3 +43,97 @@
     background-color: #ddd;
     color: black;
   }
+  /* home styling */
+  .picture{
+    background-image: url("https://bit.ly/3896bsu");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 700px;
+  }
+  .title{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    -webkit-transform: translatey(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 2;
+    font-family: sans-serif
+  }
+  .title h1{
+    font-size: 60px;
+    color: #EBEAE6;
+    text-align: center;
+    margin: 0;
+  }
+  .title p{
+    font-size: 20px;
+    color: #FCEFEF;
+    text-align: center;
+    margin: 0;
+    letter-spacing: 7px;
+    margin-top: 10px;
+  }
+  /* body{ */
+    /* overflow-y: hidden; */
+
+  /* } */
+  /* styling styling */
+  #customerOrder{
+    display: none;
+  }
+  #leftCol{
+    background-image: url(https://bit.ly/2Vz1zt9);
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    background-color: green;
+    height: 100%;
+  }
+  
+  #rightCol{
+    background-image: url(https://bit.ly/2wYBXvL);
+    background-color: red;
+    height: 100%;
+  }
+  
+  #cancelButton{
+    float: right;
+    margin-top: 20px;
+    padding: 20px 40px 20px 40px;
+  }
+  
+  #orderButton{
+    margin-top: 20px;
+    padding: 20px 40px 20px 40px;
+  }
+  
+  
+  .well{
+    background-color:white;
+    padding: 30px;
+    border-radius: 30px;
+    font-family: 'Comfortaa', cursive;
+  }
+  
+  .orderTitle{
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  body{
+    background-image: url(../img/italianStreets.jpg);
+    background-size: auto;
+  }
+  
+  ul{
+    list-style: none;
+    font-size: 3em;
+    text-align: center;
+  }
+  label{
+    font-size: 2em;
+    font-family: times;
+    font-family: 'Comfortaa', cursive;
+  }
