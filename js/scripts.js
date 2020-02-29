@@ -1,13 +1,14 @@
-function Pizza(size, toppings1,toppings2,toppings3,toppings4){
+function Pizza(size, toppings1,toppings2,toppings3,toppings4,crust){
     this.size = size;
     this.toppings1 = toppings1;
     this.toppings2 = toppings2;
     this.toppings3 = toppings3;
     this.toppings4 = toppings4;
+    this.crust = crust;
   };
   
   Pizza.prototype.price = function(){
-    var total = this.toppings1 + this.toppings2 + this.toppings3 + this.toppings4 + this.size;
+    var total = this.toppings1 + this.toppings2 + this.toppings3 + this.toppings4 + this.size + this.crust;
     return total;
   };
   
@@ -20,8 +21,8 @@ function Pizza(size, toppings1,toppings2,toppings3,toppings4){
       var toppings2 = parseFloat($("#toppings2").val());
       var toppings3 = parseFloat($("#toppings3").val());
       var toppings4 = parseFloat($("#toppings4").val());
-  
-      var userPizza = new Pizza(size,toppings1,toppings2,toppings3,toppings4);
+      var crust = parseFloat($("#crust").val());
+      var userPizza = new Pizza(size,toppings1,toppings2,toppings3,toppings4,crust);
       
       $("#customerOrder").slideToggle(500);
       $("ul").append("<li>" + "ksh." + userPizza.price().toFixed(2) + "</li>");

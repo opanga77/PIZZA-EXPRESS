@@ -45,7 +45,7 @@
   }
   /* home styling */
   .picture{
-    background-image: url("https://bit.ly/3896bsu");
+    background-image: url("https://bit.ly/2Vzg8wH");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -85,15 +85,19 @@
     display: none;
   }
   #leftCol{
-    background-image: url(https://bit.ly/2Vz1zt9);
+    background-image: url(https://bit.ly/2T9Xuu0);
     /* background-repeat: no-repeat; */
-    /* background-size: cover; */
+    background-size: cover;
     background-color: green;
     height: 100%;
+    color:brown;
   }
   
   #rightCol{
     background-image: url(https://bit.ly/2wYBXvL);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-right: 50px;
     background-color: red;
     height: 100%;
   }

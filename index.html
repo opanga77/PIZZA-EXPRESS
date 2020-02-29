@@ -13,6 +13,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="header">
@@ -35,19 +38,31 @@
             </div>
         </div>
         </div>
+        <div>
+          <h1>Pizza Menu</h1>
+            <div col-md-4>
+              <img src="https://bit.ly/2VwsbLm" height="300px" width="400px" >
+              <img src="https://bit.ly/2wfvkVg" height="300px" width="400px" >
+              <img src="https://bit.ly/395CjPb" height="300px" width="400px" >
+            </div>
+            <div col-md-4>
+              <img src="https://bit.ly/2ToYrNZ" height="300px" width="400px" >
+              <img src="https://bit.ly/2whgCwS" height="300px" width="400px">
+              <img src="https://bit.ly/3ceSgol" height="300px" width="400px">
+        </div>
         <br><br><br><br>
         <!-- dshytfysdytafufatsdfas -->
         <div class = "container">
             <div class="row">
               <div class="col-md-3">
                 <div class="well" id="leftCol">
-                    <h2>Toppings</h2>
+                    <!-- <h2>Toppings</h2> -->
                     <!-- <p>trukurdjygyh<br>brdskdxjhdshjdfgj<br>sdhgfkjefsdjsdfhds<br>jffdfkhdsjfsdjhgfsdj<br>xfjhcdgvfvjdrhjhj<br>dskjlksoeuiryeoe</p> -->
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="well">
-                    <h1>kufstwqfahtrsdfasydftas</h1>
+                    <h1>ORDER NOW! <em>we</em> DELIVER NOW!</h1>
                   <div class = "form-group">
                     <form id= "pizzaOrder">
                       <label for="size">Choose Your Size of Pizza:</label>
@@ -67,14 +82,10 @@
                         <option value= 150>Mushrooms (ksh.150)</option>
                         <option value= 150>Onions (ksh.150)</option>
                         <option value= 150>Green Peppers (ksh.150)</option>
-                        <option value= 150>Arugula (ksh.150)</option>
-                        <option value= 150>Green Olives (ksh.150)</option>
                       </select>
                       <label for="toppings2">Second Topping:</label>
                       <select class="form-control" id="toppings2">
                         <option value= 0>none</option>
-                        <option value= 200>Pepperoni (ksh.200)</option>
-                        <option value= 200>Sausage (ksh.200)</option>
                         <option value= 250>Capicola (ksh.250)</option>
                         <option value= 250>Anchovies (ksh.250)</option>
                         <option value= 150>Mushrooms (ksh.150)</option>
@@ -90,8 +101,6 @@
                         <option value= 200>Pepperoni (ksh.200)</option>
                         <option value= 200>Sausage (ksh.200)</option>
                         <option value= 250>Capicola (ksh.250)</option>
-                        <option value= 250>Anchovies (ksh.250)</option>
-                        <option value= 150>Mushrooms (ksh.150)</option>
                         <option value= 150>Onions (ksh.150)</option>
                         <option value= 150>Green Peppers (ksh.150)</option>
                         <option value= 150>Arugula (ksh.150)</option>
@@ -105,10 +114,18 @@
                         <option value= 250>Capicola (ksh250)</option>
                         <option value= 250>Anchovies (ksh250)</option>
                         <option value= 150>Mushrooms (ksh150)</option>
-                        <option value= 150>Onions (ksh150)</option>
-                        <option value= 150>Green Peppers (ksh.150)</option>
                         <option value= 150>Arugula (ksh.150)</option>
                         <option value= 150>Green Olives (ksh.150)</option>
+                      </select>
+                      <label for="crust">Choose Your crust:</label>
+                      <select class="form-control" id="crust">
+                        <option value= 0>none</option>
+                        <option value= 200>Thin crust (ksh.200)</option>
+                        <option value= 200>Crispy (ksh.200)</option>
+                        <option value= 250>Stuffed (ksh.250)</option>
+                        <option value= 250>Gluten-free (ksh.250)</option>
+                        <option value= 150>Cheese (ksh.150)</option>
+                        <option value= 150>Deep Crust (ksh.150)</option>
                       </select>
                       <button type="submit" class="btn btn-success" id="orderButton">Get Price</button>
                       <button type="button" class="btn btn-danger" value="Refresh Page" onClick="window.location.reload()" id="cancelButton">Cancel</button>
@@ -131,6 +148,24 @@
               </div>
             </div>
           </div>
+          <br><br><br>
+          <footer>
+            <div class="container">
+               <div class="social-icons">
+                <a href="#"><img src="/Assets/social_icons/behance.png"></a>
+                <a href="#"><img src="/Assets/social_icons/dribble.png"></a>
+                  <a href="#"><img src="/Assets/social_icons/facebook.png"></a>
+                    <a href="#"><img src="/Assets/social_icons/flickr.png"></a>
+                      <a href="#"><img src="/Assets/social_icons/g_plus.png"></a>
+                        <a href="#"><img src="/Assets/social_icons/pinterest.png"></a>
+                          <a href="#"><img src="/Assets/social_icons/skype.png"></a>
+                            <a href="#"><img src="/Assets/social_icons/stumble_upon.png"></a>
+                              <a href="#"><img src="/Assets/social_icons/twitter.png"></a>
+                                <a href="#"><img src="/Assets/social_icons/you_tube.png"></a>
+               </div>
+              <p>PIZZA EXPRESS<br> 2020</p>
+           </div>
+         </footer>
         <script src="/js/scripts.js"></script>
 </body>
 </html>
