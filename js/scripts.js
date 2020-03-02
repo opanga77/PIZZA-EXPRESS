@@ -25,50 +25,50 @@ function getNumber() {
     var selectedNumber = document.getElementById("numberofpizza").value;
     return parseInt(selectedNumber);
 }
-function mozarellaCheese() {
-  var cheese = 0;
-  var addmozarellaCheese = document.getElementById("toppingone");
-  if (addmozarellaCheese.checked === true) {
-      cheese = 120;
+function copicola() {
+  var copicola = 0;
+  var addcopicola = document.getElementById("toppingone");
+  if (addcopicola.checked === true) {
+      copicola = free;
   }
-  return parseInt(cheese);
+  return parseInt(copicola);
 }
-function sausages() {
-    var sausage = 0;
-    var addsausage = document.getElementById("toppingone");
-    if (addsausage.checked === true) {
-        sausage = 150;
+function arugula() {
+    var arugula = 0;
+    var addarugula = document.getElementById("toppingone");
+    if (addarugula.checked === true) {
+        arugula = free;
     }
-    return parseInt(sausage);
+    return parseInt(arugula);
 }
 function onions() {
-    var onion = 0;
+    var onions = 0;
     var addonions = document.getElementById("toppingone");
-    if (addMushroom.checked === true) {
-        onion = 140;
+    if (addonions.checked === true) {
+        onions = free;
     }
-    return parseInt(onion);
+    return parseInt(onions);
 }
-function tikkaSaucee() {
-    var tikkaSauce = 0;
-    var addtikkaSauce = document.getElementById("toppingone");
-    if (addtikkaSauce.checked === true) {
-        tikkaSauce = 130;
+function pepperoni() {
+    var pepperoni = 0;
+    var addpepperoni = document.getElementById("toppingone");
+    if (addpepperoni.checked === true) {
+        pepperoni = free;
     }
-    return parseInt(tikkaSauce);
+    return parseInt(pepperoni);
 }
 
-function mushrooms() {
-  var mushroom = 0;
-  var addMushroom = document.getElementById("toppingone");
-  if (addMushroom.checked === true) {
-      mushroom = 160;
+function anchovies() {
+  var anchovies = 0;
+  var addAnchovies = document.getElementById("toppingone");
+  if (addAnchovies.checked === true) {
+      anchovies = free;
   }
-  return parseInt(mushroom);
+  return parseInt(anchovies);
 }
 function calctotalPrice(e) {
     event.preventDefault();
-    var totalPrice = (getSizeCost() + getCrustCost() + mushrooms()) * (getNumber());
+    var totalPrice = (getSizeCost() + getCrustCost() + anchovies()) * (getNumber());
     
         console.log(totalPrice);
     alert("Your order of " + getNumber() + " pizzas has been processed.Your total amount payable is " + totalPrice +"." )

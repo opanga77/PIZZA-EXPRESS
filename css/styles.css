@@ -198,3 +198,7 @@ body{
     align-items: center;
     text-align: center;
   }
+  .container #pizzainfo #toppingone{
+    text-align: center;
+    align-items: center;
+  }
