@@ -194,3 +194,7 @@ body{
     color: white;
     transform: rotateY(180deg);
   }
+  .container #pizzainfo{
+    align-items: center;
+    text-align: center;
+  }
