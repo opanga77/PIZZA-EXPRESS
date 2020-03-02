@@ -1,9 +1,9 @@
 ## project
-Delani studio
+PIZZA-EXPRESS
 ## Author
 Anderson Okinyi
 ## Description
-This aplication discribes our business.And most what we do. 
+ 
 ## Project setup instruction
 []Creatin a new local project,
 []Adding the project to GitHub,
