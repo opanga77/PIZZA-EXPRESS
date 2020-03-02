@@ -51,117 +51,53 @@
               <img src="https://bit.ly/3ceSgol" height="300px" width="400px">
         </div>
         <br><br><br><br>
-        <!-- dshytfysdytafufatsdfas -->
-        <div class = "container">
-            <div class="row">
-              <div class="col-md-3">
-                <div class="well" id="leftCol">
-                    <!-- <h2>Toppings</h2> -->
-                    <!-- <p>trukurdjygyh<br>brdskdxjhdshjdfgj<br>sdhgfkjefsdjsdfhds<br>jffdfkhdsjfsdjhgfsdj<br>xfjhcdgvfvjdrhjhj<br>dskjlksoeuiryeoe</p> -->
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="well">
-                    <h1>ORDER NOW! <em>we</em> DELIVER NOW!</h1>
-                  <div class = "form-group">
-                    <form id= "pizzaOrder">
-                      <label for="size">Choose Your Size of Pizza:</label>
-                      <select class="form-control" id="size">
-                        <option value= 800>Small: ksh.800</option>
-                        <option value= 1100>Medium: ksh.1,100</option>
-                        <option value= 1300>Large: ksh.1,300</option>
-                        <!-- <option value= 1400>Extra-Large: ksh.1,400</option> -->
-                      </select>
-                      <label for="toppings1">Choose Your First Topping:</label>
-                      <select class="form-control" id="toppings1">
-                        <option value= 0>Plain (Just Cheese and sauce)</option>
-                        <option value= 200>Pepperoni (ksh.200)</option>
-                        <option value= 200>Sausage (ksh.200)</option>
-                        <option value= 250>Capicola (ksh.250)</option>
-                        <option value= 250>Anchovies (ksh.250)</option>
-                        <option value= 150>Mushrooms (ksh.150)</option>
-                        <option value= 150>Onions (ksh.150)</option>
-                        <option value= 150>Green Peppers (ksh.150)</option>
-                      </select>
-                      <label for="toppings2">Second Topping:</label>
-                      <select class="form-control" id="toppings2">
-                        <option value= 0>none</option>
-                        <option value= 250>Capicola (ksh.250)</option>
-                        <option value= 250>Anchovies (ksh.250)</option>
-                        <option value= 150>Mushrooms (ksh.150)</option>
-                        <option value= 150>Onions (ksh.150)</option>
-                        <option value= 150>Green Peppers (ksh.150)</option>
-                        <option value= 150>Arugula (ksh.150)</option>
-                        <option value= 150>Green Olives (ksh.150)</option>
-                      </select>
-                      <label for="toppings3">Third Topping:</label>
-                      <select class="form-control" id="toppings3">
-                        <option value= 0>none</option>
-                        <option value= 0>Plain (Just Cheese and sauce)</option>
-                        <option value= 200>Pepperoni (ksh.200)</option>
-                        <option value= 200>Sausage (ksh.200)</option>
-                        <option value= 250>Capicola (ksh.250)</option>
-                        <option value= 150>Onions (ksh.150)</option>
-                        <option value= 150>Green Peppers (ksh.150)</option>
-                        <option value= 150>Arugula (ksh.150)</option>
-                        <option value= 150>Green Olives (ksh.150)</option>
-                      </select>
-                      <label for="toppings4">Fourth Topping:</label>
-                      <select class="form-control" id="toppings4">
-                        <option value= 0>none</option>
-                        <option value= 200>Pepperoni (ksh200)</option>
-                        <option value= 200>Sausage (ksh200)</option>
-                        <option value= 250>Capicola (ksh250)</option>
-                        <option value= 250>Anchovies (ksh250)</option>
-                        <option value= 150>Mushrooms (ksh150)</option>
-                        <option value= 150>Arugula (ksh.150)</option>
-                        <option value= 150>Green Olives (ksh.150)</option>
-                      </select>
-                      <label for="crust">Choose Your crust:</label>
-                      <select class="form-control" id="crust">
-                        <option value= 0>none</option>
-                        <option value= 200>Thin crust (ksh.200)</option>
-                        <option value= 200>Crispy (ksh.200)</option>
-                        <option value= 250>Stuffed (ksh.250)</option>
-                        <option value= 250>Gluten-free (ksh.250)</option>
-                        <option value= 150>Cheese (ksh.150)</option>
-                        <option value= 150>Deep Crust (ksh.150)</option>
-                      </select>
-                      <!-- <label for="quantity">Choose Your Quantity:</label>
-                      <select class="form-control" id="quantity">
-                        <input id="quantity"  type="number" value="0" max="100" />
-                      </select>
-                      <button type="submit" class="btn btn-success" id="orderButton">Get Price</button> -->
-                      <select class="quantity">
-                        <div class="col-md-3">
-                          <select>
-                          <input id="quantity"  type="number" value="0" max="100" />
-                          </select>
-                        </div>
-                         <div class="placeOrder">
-                          <button id="placeOrder" type="placeOrder">Place Order to view Summary</button>
-                              </div>
-                    </div>	
-                    </form>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="well" id="rightCol">
-                    <!-- <p>trukurdjygyh<br>brdskdxjhdshjdfgj<br>sdhgfkjefsdjsdfhds<br>jffdfkhdsjfsdjhgfsdj<br>xfjhcdgvfvjdrhjhj<br>dskjlksoeuiryeoe</p> -->
-                </div>
-              </div>
-            </div>
-            <div id="customerOrder">
-              <div class="well" id="displayWell">
-                <h1 class="orderTitle">Your Pizza Total:</h1>
-                  <ul>
-      
-                  </ul>
-              </div>
+        <div class="order row">
+          <div class="col-md-6">
+            <h3>Enter your order details below <br>
+              Fill in the form </h3>
+            <form action="" id="pizzainfo">
+              <label for="">Choose your pizza size</label>
+              <select class="form-control" name="size" id="size">
+                <option value="1200">Large @ ksh 1200</option>
+                <option value="900">Medium @ ksh 900</option>
+                <option value="600">Small @ ksh 600</option>
+              </select>
+              <label for="">Choose your desired crust type</label>
+              <select class="form-control" name="" id="crust">
+                <option value="230" name="crust">stuffed crust @ ksh230
+                <option value="250" name="crust">Crispy @ ksh 250
+                <option value="300" name="crust">Glutten free @ ksh 300
+              </select>
+              <label for="">Choose your Desired toppings</label> <br>
+              <input value="150" type="checkbox" id="toppingone">Mushrooms
+              <input value="150" type="checkbox" id="toppingone">Sausage
+              <input value="150" type="checkbox" id="toppingone">Onions
+              <input value="150" type="checkbox" id="toppingone">Tikka Sauce
+              <input value="150" type="checkbox" id="toppingone">Mozarella Cheese
+    
+              <label for="">Input Quantity</label>
+              <input class="form-control form-group" type="text" id="numberofpizza">
+              <button name="button" type="submit" id="submit" value="Check-Out"
+                onclick="calctotalPrice()">Submit</button>
+            </form>
+          </div>
+    
+          <div class="col-md-6">
+            <div id="formlocation">
+              <h3>For delivery services,enter your location details below</h3>
+              <form id="delivery">
+                <label for="name">Name</label>
+                <input class="form-control" type="text" name="" id="name" required="required">
+                <label for="location">Location</label>
+                <input class="form-control" type="text" id="location" placeholder="location...">
+                <label for="phonenumber">Phone Number</label>
+                <input class="form-control" type="tel" placeholder="07xxxxxxxx" id="number"> <br>
+                <button type="submit" name="button" id="submit">submit</button>
+              </form>
             </div>
           </div>
-          <br><br><br>
+        </div>
+        
           <footer>
             <div class="container">
                <div class="social-icons">
