@@ -74,7 +74,8 @@ body{
   }
   .title p{
     font-size: 20px;
-    color:blue;
+    color:black;
+    font-weight: 100;
     text-align: center;
     margin: 0;
     letter-spacing: 7px;
@@ -150,7 +151,7 @@ body{
     background-repeat: no-repeat;
     background-position: cover;
     background-size: cover;
-    color:gold;
+    color:yellow;
   }
   h2{
     text-align: center;
@@ -201,4 +202,11 @@ body{
   .container #pizzainfo #toppingone{
     text-align: center;
     align-items: center;
+  }
+  #footer{
+    background-color: black;
+    color: white;
+  }
+  .vissit{
+    float: right;
   }
