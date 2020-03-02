@@ -1,4 +1,17 @@
 
+$(document).ready(function () {
+  $("#delivery").submit(function () {
+
+      var name = $("input#name").val();
+      var number = $("input#number").val();
+      var location = $("input#location").val();
+
+      alert("From PIZZA-EXPRESS, " + "Hi " + name + ". Your order has been  received,it will be delivered to " +  location + " within short time possible.The delivery  cost is ksh.200....Thank you and we are graetfull for you!.");
+      
+  });
+  
+});
+
 function getSizeCost() {
     var selectedSize = document.getElementById("size").value;
     return parseInt(selectedSize);
