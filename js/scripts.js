@@ -12,20 +12,19 @@ function getNumber() {
     var selectedNumber = document.getElementById("numberofpizza").value;
     return parseInt(selectedNumber);
 }
-function mushrooms() {
-    var mushroom = 0;
-    var addMushroom = document.getElementById("toppingone");
-    if (addMushroom.checked === true) {
-        mushroom = 150;
-    }
-    return parseInt(mushroom);
+function mozarellaCheese() {
+  var cheese = 0;
+  var addmozarellaCheese = document.getElementById("toppingone");
+  if (addmozarellaCheese.checked === true) {
+      cheese = 120;
+  }
+  return parseInt(cheese);
 }
-
 function sausages() {
     var sausage = 0;
     var addsausage = document.getElementById("toppingone");
     if (addsausage.checked === true) {
-        sausage = 140;
+        sausage = 150;
     }
     return parseInt(sausage);
 }
@@ -33,7 +32,7 @@ function onions() {
     var onion = 0;
     var addonions = document.getElementById("toppingone");
     if (addMushroom.checked === true) {
-        onion = 130;
+        onion = 140;
     }
     return parseInt(onion);
 }
@@ -41,19 +40,19 @@ function tikkaSaucee() {
     var tikkaSauce = 0;
     var addtikkaSauce = document.getElementById("toppingone");
     if (addtikkaSauce.checked === true) {
-        tikkaSauce = 120;
+        tikkaSauce = 130;
     }
     return parseInt(tikkaSauce);
 }
-function mozarellaCheese() {
-    var cheese = 0;
-    var addmozarellaCheese = document.getElementById("toppingone");
-    if (addmozarellaCheese.checked === true) {
-        cheese = 110;
-    }
-    return parseInt(cheese);
-}
 
+function mushrooms() {
+  var mushroom = 0;
+  var addMushroom = document.getElementById("toppingone");
+  if (addMushroom.checked === true) {
+      mushroom = 160;
+  }
+  return parseInt(mushroom);
+}
 function calctotalPrice(e) {
     event.preventDefault();
     var totalPrice = (getSizeCost() + getCrustCost() + mushrooms()) * (getNumber());
